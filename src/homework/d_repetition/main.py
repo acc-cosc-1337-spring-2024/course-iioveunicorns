@@ -18,11 +18,7 @@ while menu_select == 1 or menu_select == 2 or menu_select == 3:
                 factorial = int(input('Invalid Number selected, use 1-10: '))
         result = repetition.get_factorial(factorial)
         print('The Factorial of the number is: ', result)
-        menu_cont = input('Would you like to choose another option? (Y or N) ' )
-        if menu_cont == 'y':
-            menu_select = int(input('Please select another number from Homework Menu: '))
-        else:
-            menu_select = 'Exit'
+        menu_select = int(input('Please select another number from Homework Menu: '))
     
     elif menu_select == 2:
         total_sum = int(input('Please enter a number to receive the sum of the odd factors (between 0-100): '))
@@ -32,17 +28,12 @@ while menu_select == 1 or menu_select == 2 or menu_select == 3:
 
         result = repetition.sum_odd_numbers(total_sum)
         print('The sum of all odd factors is: ', result)
-
-        menu_cont = input("Would you like to choose another option? (Y or N): ")
-        if menu_cont == 'y':
-            menu_select = int(input('Please select another number from Homework Menu: '))
-        else: 
-            menu_select = 'Exit'
+        menu_select = int(input('Please select another number from Homework Menu: '))
+    elif menu_select == 3:
         
-    else: 
         menu_cont = input('Are you sure you would like to exit? (Y or N): ')
         if menu_cont == 'n':
-            menu_select = int(input('Please select another number from Homework Menu'))
+            menu_select = int(input('Please select another number from Homework Menu: '))
         else:
             menu_select = 'Exit'
 
